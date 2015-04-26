@@ -47,4 +47,4 @@ Full_set <- cbind(X,Y,Subject)
 
 Means_set <- ddply(Full_set, .(ActivityName, SubjectID), function(Means) colMeans(Full_set[ 1:66]))
 
-write.table(Means_set,"Means_set.txt")
+write.table(Means_set,"Means_set.txt", row.name = FALSE)
