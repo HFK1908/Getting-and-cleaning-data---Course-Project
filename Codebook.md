@@ -20,17 +20,17 @@ The final data contains 68 variables and 180 observations.
 
 The objects in the environment, created by the run_analysis.R-script, and their descriptions are as follows :
 
-* X_test : Contains all data from the x_test.txt file. 2947 obs. of 561 vars.
-* Y_test : Contains all data from the y_test.txt file. 2947 obs. of 1 var.
-* X_train : Contains all data from the x_train.txt file. 7342 obs. of 561 vars.
-* Y_train : Contains all data from the y_train.txt file. 7342 obs. of 561 vars.
-* X : rbind of X_test and X_train. Columns not pertaining to means and standard deviations are excluded using the           vector Mean_std_feat (description below).
-* Y : rbind of Y_test and Y_train.
-* Feat : Contains all data from the features.txt file. 561 obs. of 2 vars.
-* Mean_std_feat : Integer vector containing the rownumbers of features pertaining to means and standard deviations.
-* ActLab :
-* Subject_test
-* Subject_train
-* Subject
-* Full_set
-* Means_set
+* __X_test__ : Contains all data from the x_test.txt file. 2947 obs. of 561 vars.
+* __Y_test__ : Contains all data from the y_test.txt file. 2947 obs. of 1 var.
+* __X_train__ : Contains all data from the x_train.txt file. 7342 obs. of 561 vars.
+* __Y_train__ : Contains all data from the y_train.txt file. 7342 obs. of 561 vars.
+* __X__ : rbind of X_test and X_train. Columns not pertaining to means and standard deviations are excluded using the vector Mean_std_feat (description below).
+* __Y__ : rbind of Y_test and Y_train.
+* __Feat__ : Contains all data from the features.txt file. 561 obs. of 2 vars.
+* __Mean_std_feat__ : Integer vector containing the rownumbers of features pertaining to means and standard deviations.
+* __ActLab__ : Contains all data from the activity_labels.txt file.
+* __Subject_test__ : Contains all data from the subject_test.txt file.
+* __Subject_train__ : Contains all data from the subject_train.txt file.
+* __Subject__ : rbind of Subject_test and Subject_train.
+* __Full_set__ : cbind of X, Y and Subject.
+* __Means_set__ : Means of all variables in Full_set, aggregated by activity(ActivityName) and subject(SubjectID).
