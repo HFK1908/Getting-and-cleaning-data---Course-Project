@@ -20,6 +20,17 @@ The final data contains 68 variables and 180 observations.
 
 The objects in the environment, created by the run_analysis.R-script, and their descriptions are as follows :
 
-* X_test
-* Y_test
-* 
+* X_test : Contains all data from the x_test.txt file. 2947 obs. of 561 vars.
+* Y_test : Contains all data from the y_test.txt file. 2947 obs. of 1 var.
+* X_train : Contains all data from the x_train.txt file. 7342 obs. of 561 vars.
+* Y_train : Contains all data from the y_train.txt file. 7342 obs. of 561 vars.
+* X : rbind of X_test and X_train. Columns not pertaining to means and standard deviations are excluded using the           vector Mean_std_feat (description below).
+* Y : rbind of Y_test and Y_train.
+* Feat : Contains all data from the features.txt file. 561 obs. of 2 vars.
+* Mean_std_feat : Integer vector containing the rownumbers of features pertaining to means and standard deviations.
+* ActLab :
+* Subject_test
+* Subject_train
+* Subject
+* Full_set
+* Means_set
